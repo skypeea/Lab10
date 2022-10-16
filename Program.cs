@@ -10,7 +10,11 @@ namespace Lab10
     {
         static void Main(string[] args)
         {
-            Angle angle = new Angle(0, 0, 0);
+           Console.WriteLine("Введите градусы, минуты и секунды");
+            int g = Convert.ToInt32(Console.ReadLine());
+            int m = Convert.ToInt32(Console.ReadLine());
+            int s = Convert.ToInt32(Console.ReadLine());
+            Angle angle = new Angle(g, m, s);
             Console.WriteLine("Заданный угол в радианах: {0:0.0000}", angle.ToRadians());
            
             Console.ReadKey();
